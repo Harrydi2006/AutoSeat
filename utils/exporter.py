@@ -384,7 +384,7 @@ def _create_split_visualization(
     zip_buffer = io.BytesIO()
     
     with zipfile.ZipFile(zip_buffer, 'w', zipfile.ZIP_DEFLATED) as zip_file:
-        # 创建正向关系图
+        # 只创建正向关系图
         if filtered_pos_pairs:
             fig1, ax1 = plt.subplots(figsize=figsize, dpi=dpi)
             fig1.patch.set_facecolor('#f8f9fa')
